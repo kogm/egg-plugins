@@ -1,0 +1,42 @@
+{
+  "name": "@mitod/signature-client",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
+    "clean": "rimraf lib esm",
+    "build:cj": "tsc --project tsconfig.json",
+    "build:es": "tsc -m esNext --outDir esm",
+    "build": "npm run clean && npm run build:cj && npm run build:es",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:mitod/mitod-utils-js.git"
+  },
+  "dependencies": {
+    "@mitod/js-utils": "^0.0.6"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "0.0.5",
+    "@types/crypto-js": "^3.1.43",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0",
+    "qs": "^6.8.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "gitHead": "ed83ed66c1542f59b57494890475fbfe51af158a"
+}

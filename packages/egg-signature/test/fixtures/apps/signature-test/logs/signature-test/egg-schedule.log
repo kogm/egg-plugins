@@ -1,0 +1,6 @@
+2019-11-04 17:14:51,215 INFO 26615 [egg-schedule]: register schedule /Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2019-11-04 17:14:51,215 INFO 26615 [egg-schedule]: register schedule /Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-11-04 17:14:51,215 INFO 26615 [egg-schedule]: register schedule /Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-11-04 17:14:51,269 INFO 26615 [Timer] /Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 40508733ms at 2019-11-05 04:30:00.002
+2019-11-04 17:14:51,269 INFO 26615 [Timer] /Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 24308731ms at 2019-11-05 00:00:00.000
+2019-11-04 17:14:51,269 INFO 26615 [Timer] /Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 24309731ms at 2019-11-05 00:00:01.000

@@ -1,0 +1,4 @@
+2019-11-04 17:14:51,146 INFO 26615 [egg:logger] init all loggers with options: {"dir":"/Users/kogm/Documents/temp/egg-signature/test/fixtures/apps/signature-test/logs/signature-test","encoding":"utf8","env":"unittest","level":"INFO","consoleLevel":"WARN","disableConsoleAfterReady":false,"outputJSON":false,"buffer":false,"appLogName":"signature-test-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"agent"}
+2019-11-04 17:14:51,151 INFO 26615 [egg:core] dump config after load, 3ms
+2019-11-04 17:14:51,174 INFO 26615 [egg-watcher:agent] watcher start success
+2019-11-04 17:14:51,177 INFO 26615 [egg:core] dump config after ready, 2ms

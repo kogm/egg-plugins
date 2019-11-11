@@ -1,0 +1,241 @@
+{
+  "keys": "/Users/kogm/Documents/temp/egg-signature/test/fixtures/apps/signature-test/config/config.default.js",
+  "session": {
+    "maxAge": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "maxAge": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-watcher/config/config.unittest.js",
+    "eventSources": {
+      "default": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-view/config/config.default.js",
+    "defaultExtension": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg-view/config/config.default.js"
+  },
+  "signature": "/Users/kogm/Documents/temp/egg-signature/config/config.default.js",
+  "env": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "name": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "version": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "strict": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "depth": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "env": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "level": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.unittest.js",
+    "disableConsoleAfterReady": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.unittest.js",
+    "appLogName": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "coreLogger": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "allowDebugAtProd": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "logging": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "port": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/kogm/Documents/temp/egg-signature/node_modules/egg/config/config.default.js"
+}

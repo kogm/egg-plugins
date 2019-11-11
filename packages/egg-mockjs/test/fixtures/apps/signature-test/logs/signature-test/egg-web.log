@@ -1,0 +1,14 @@
+2019-11-04 17:14:51,211 INFO 26615 [egg:logger] init all loggers with options: {"dir":"/Users/kogm/Documents/temp/egg-signature/test/fixtures/apps/signature-test/logs/signature-test","encoding":"utf8","env":"unittest","level":"INFO","consoleLevel":"WARN","disableConsoleAfterReady":false,"outputJSON":false,"buffer":false,"appLogName":"signature-test-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2019-11-04 17:14:51,216 INFO 26615 [egg-multipart] stream mode enable
+2019-11-04 17:14:51,242 INFO 26615 [egg-static] starting static serve /public/ -> /Users/kogm/Documents/temp/egg-signature/test/fixtures/apps/signature-test/app/public
+2019-11-04 17:14:51,243 INFO 26615 [egg-security] use csrf middleware
+2019-11-04 17:14:51,244 INFO 26615 [egg-security] use methodnoallow middleware
+2019-11-04 17:14:51,244 INFO 26615 [egg-security] use noopen middleware
+2019-11-04 17:14:51,244 INFO 26615 [egg-security] use nosniff middleware
+2019-11-04 17:14:51,245 INFO 26615 [egg-security] use xssProtection middleware
+2019-11-04 17:14:51,245 INFO 26615 [egg-security] use xframe middleware
+2019-11-04 17:14:51,245 INFO 26615 [egg-security] use dta middleware
+2019-11-04 17:14:51,245 INFO 26615 [egg-security] compose 7 middlewares into one security middleware
+2019-11-04 17:14:51,255 INFO 26615 [egg:core] dump config after load, 2ms
+2019-11-04 17:14:51,263 INFO 26615 [egg-watcher:application] watcher start success
+2019-11-04 17:14:51,267 INFO 26615 [egg:core] dump config after ready, 4ms

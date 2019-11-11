@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "bootstrap": {
+    "npmClientArgs": []
+  },
+  "npmClient": "npm"
+}

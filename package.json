@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "scripts": {
+    "publish": "lerna publish",
+    "bootstrap": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}

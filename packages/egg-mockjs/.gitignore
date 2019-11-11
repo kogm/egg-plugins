@@ -1,0 +1,9 @@
+node_modules/
+lib/
+esm/
+package-lock.json
+yarn.lock
+app.js
+agent.js
+app/**/*.js
+config/**/*.js

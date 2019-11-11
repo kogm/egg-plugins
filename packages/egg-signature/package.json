@@ -1,0 +1,63 @@
+{
+  "name": "egg-signature",
+  "version": "0.0.1",
+  "description": "",
+  "eggPlugin": {
+    "name": "signature"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@react-native-community/eslint-config": "0.0.5",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "babel-jest": "^24.9.0",
+    "egg": "^2.16.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0",
+    "qs": "^6.8.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "tsc": "ets && tsc -p tsconfig.json",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod",
+    "fix": "eslint . --fix",
+    "clean": "rimraf lib esm",
+    "build:cj": "tsc --project tsconfig.json",
+    "build:es": "tsc -m esNext --outDir esm",
+    "build": "npm run clean && npm run build:cj && npm run build:es",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config/**/*.js",
+    "app/**/*.js"
+  ],
+  "ci": {
+    "version": "8, 10"
+  },
+  "bugs": {
+    "email": "cnxxjs2538@163.com"
+  },
+  "author": "kogm",
+  "license": "MIT"
+}
