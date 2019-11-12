@@ -56,24 +56,6 @@ const plugin = {
   },
 };
 ```
-
-> 配置
-```ts
-
-// config.default.[jt]s
-export default = ()=>{
-  //...
-  const confg = {};
-  config.mockjs: {
-    dev: true, //开发模式 会启动mockjs
-  },
-  //...
-  return {
-     ...config,
-  }
-}
-
-```
 > 使用
 ```ts
 // root/app/mock/demo.ts
