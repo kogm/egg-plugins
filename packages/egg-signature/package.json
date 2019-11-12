@@ -1,6 +1,6 @@
 {
   "name": "egg-signature",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "eggPlugin": {
     "name": "signature"
@@ -10,9 +10,11 @@
     "eggPlugin",
     "egg-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@mitod/js-utils": "^0.0.8"
+  },
   "devDependencies": {
-    "@react-native-community/eslint-config": "0.0.5",
+    "@mitod/eslint-config": "^0.0.6",
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
     "babel-jest": "^24.9.0",
