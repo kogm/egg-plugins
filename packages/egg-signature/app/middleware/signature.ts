@@ -1,3 +1,5 @@
+import {decrypt} from '@mitod/js-utils/lib/secret/aes';
+import {checkSign} from '@mitod/js-utils/lib/secret/sign';
 /**
  * timegap 客户端访问时间 默认600秒
  */
@@ -33,14 +35,14 @@ export default options => async (ctx: any, next: any) => {
   }
 
   // 4. 验签
-  const ret = ctx.helper.checkSign(sign, data, secretkey);
+  const ret = checkSign(sign, data, secretkey);
   if (!ret) {
     ctx.body = { code: 1005, message: errorCode[1005] };
     return;
   }
 
   // 5. 解密数据并赋值给locals
-  const realData = ctx.helper.AESDecrypt(data, secretkey);
+  const realData = decrypt(data, secretkey);
 
   if (realData) {
     ctx.locals = JSON.parse(realData);
