@@ -13,12 +13,15 @@ function decodeParam(val) {
     throw err;
   }
 }
-export default options => {
+let cacheMock:string[] | null = null;
+
+export default () => {
   return async function mockjs(ctx, next) {
-    const { dev } = options;
-    if (dev) {
       const { mockData } = ctx.app;
-      Object.keys(mockData).forEach(mock => {
+      if(!cacheMock){
+        cacheMock = Object.keys(mockData);
+      }
+      cacheMock.forEach(async mock => {
         const { method, re, keys, handler } = mockData[mock];
 
         if (method === ctx.request.method) {
@@ -35,14 +38,14 @@ export default options => {
             }
             ctx.request.query = params;
             if (typeof handler === 'function') {
-              handler(ctx);
+              await handler(ctx, next);
             } else {
               ctx.body = handler;
             }
+          } else {
+            await next();
           }
         }
       });
-    }
-    await next();
   };
 };
