@@ -45,7 +45,7 @@ export default options => async (ctx: any, next: any) => {
   const realData = decrypt(data, secretkey);
 
   if (realData) {
-    ctx.locals = getOriginData(realData);
+    ctx.locals.signData = getOriginData(realData);
   } else {
     throw new Error('解析异常');
   }
