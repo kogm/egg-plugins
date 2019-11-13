@@ -1,6 +1,6 @@
 {
   "name": "egg-signature",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "eggPlugin": {
     "name": "signature"
@@ -11,7 +11,8 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "@mitod/js-utils": "^0.0.8"
+    "@mitod/js-utils": "^0.0.10",
+    "@mitod/sdk-sign": "^0.0.3"
   },
   "devDependencies": {
     "@mitod/eslint-config": "^0.0.6",

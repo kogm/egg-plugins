@@ -1,5 +1,5 @@
 import {decrypt} from '@mitod/js-utils/lib/secret/aes';
-import {checkSign} from '@mitod/js-utils/lib/secret/sign';
+import {checkSign,getOriginData} from '@mitod/sdk-sign';
 /**
  * timegap 客户端访问时间 默认600秒
  */
@@ -45,7 +45,7 @@ export default options => async (ctx: any, next: any) => {
   const realData = decrypt(data, secretkey);
 
   if (realData) {
-    ctx.locals = JSON.parse(realData);
+    ctx.locals = getOriginData(realData);
   } else {
     throw new Error('解析异常');
   }
