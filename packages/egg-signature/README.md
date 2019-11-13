@@ -1,31 +1,61 @@
 # 说明
 
-authorization 插件用于客户端鉴权
+1. egg-signature 插件用于服务端验签
+2. signature-client 用于客户端加签
 
 ## 加签
-请求参数说明
+客户端发送的所有都是POST请求
+一次请求描述  
+字段|类型|是否必须|备注|
+:-|:-:|:-:|:-
+accesskey|String|是|开放中心发放的开发者秘钥
+data|Object|是|详情查看，如何生成请看下文
+timestamp|Date|是|时间戳 本地时间生成的timestamp 服务器间隔超过600
+sign| String |是| 数据data MD5签名值,如何生成请看下文
+
+data:  
+字段|类型|是否必须|备注|
+:-|:-:|:-:|:-
+appid|String|是|开放中心发放的开发者id
+mch_id|String|是|商户号
+device_info|String|是|自定义参数 可以是终端设备号、门店号、收银设备号
+extend|String|否|扩展字段  json字符串，若没有则不需要加入字符串中
+
+### data的生成
 ```js
-// 待加密数据
+// 第一步开发者中心得到
+accesskey="accesskey"
+secretkey="192006250b4c09247ec02edce69f6a2d";
+
+//第二步 
+//发送数据按a-z排序 得到 key1=value1&key2=value2 转stringA
+stringA="accesskey=accesskey&appid=1111111111&body=test&device_info=333333&mch_id=2222222";
+//第三步
+//调用signature-client entry加密
+data= AES(stringA,secretkey) //注：secretkey为商户平台设置的密钥secretkey 
+
+
+```
+
+
+## 案例
+一个客户端待发送的数据包
+```js
+// 第一步准备数据
 data:	{
   appid:	1111111111 //必填 系统申请
   mch_id:	2222222 // 必填 商户号
   device_info:	333333 // 自定义参数 可以是终端设备号、门店号、收银设备号
   extend: // 扩展字段  json字符串，若没有则不需要加入字符串中
 }  
-nonce_str:	44444444 // 必填 随机值 
 timestamp: 123123// 时间戳 本地时间生成的timestamp 服务器间隔超过600秒 拒绝请求
 sign: // 签名
 ```
 
-**data 加签过程**
 ```js
-accesskey="accesskey"
-secretkey="192006250b4c09247ec02edce69f6a2d";
-// 1. 发送数据按a-z排序 得到 key1=value1&key2=value2 转stringA
-stringA="accesskey=accesskey&appid=1111111111&body=test&device_info=333333&mch_id=2222222&nonce_str=44444444";
 
 // 2. 加密AES （mode、ECB 、PKCS5Padding） 
-data=AES(stringA,secretkey) //注：secretkey为商户平台设置的密钥secretkey
+
 
 // 3. 加密数据
 sign=MD5(data+secretkey).toUpperCase()="9A0A8659F005D6984697E2CA0A9CF3B7" //注：MD5签名方式
