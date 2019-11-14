@@ -5,7 +5,7 @@ import {checkSign,getOriginData} from '@mitod/sdk-sign';
  */
 export default options => async (ctx: any, next: any) => {
   const { timegap = 600000, handler } = options;
-  const { errorCode, __DEV__ } = ctx.app.config;
+  const { errorCode } = ctx.app.config;
 
   ctx.logger.info('请求验签参数', ctx.request.body);
   const { accesskey, data, timestamp, sign } = ctx.request.body;
@@ -25,14 +25,10 @@ export default options => async (ctx: any, next: any) => {
 
   // 3.获取secretkey
   let secretkey;
-  if (__DEV__) {
-    secretkey = ctx.app.config.AES.key; // 测试用
+  if(handler){
+    secretkey = handler(ctx,accesskey)
   } else {
-    if(handler){
-      secretkey = handler(ctx,accesskey)
-    } else {
-      throw new Error('【egg-signature】没有配置回调函数handler');
-    }
+    throw new Error('【egg-signature】没有配置回调函数handler');
   }
 
   // 4. 验签

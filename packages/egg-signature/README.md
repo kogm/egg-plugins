@@ -3,6 +3,15 @@
 1. egg-sign 用于服务端验签
 2. sdk-sign 用于客户端加签
 
+## 配置 
+
+```ts
+const config = {
+  timegap: 600000,
+  handler: (ctx)=>{}
+}
+```
+
 1. AES加密  http://tool.chacuo.net/cryptaes  
 2. MD5加密  https://www.sojson.com/md5/  
 
