@@ -7,7 +7,6 @@ export default options => async (ctx: any, next: any) => {
   const { timegap = 600000, handler } = options;
   const { errorCode } = ctx.app.config;
 
-  ctx.logger.info('请求验签参数', ctx.request.body);
   const { accesskey, data, timestamp, sign } = ctx.request.body;
 
   // 1.检查必要字段
@@ -44,7 +43,7 @@ export default options => async (ctx: any, next: any) => {
   if (realData) {
     ctx.locals.signData = getOriginData(realData);
   } else {
-    throw new Error('解析异常');
+    throw new Error('源数据解析异常');
   }
   await next();
 };
