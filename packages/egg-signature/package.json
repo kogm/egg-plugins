@@ -1,6 +1,6 @@
 {
   "name": "egg-signature",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "eggPlugin": {
     "name": "signature"

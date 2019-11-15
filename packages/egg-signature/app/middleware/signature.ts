@@ -7,6 +7,7 @@ export default options => async (ctx: any, next: any) => {
   const { timegap = 600000, handler } = options;
   const { errorCode } = ctx.app.config;
 
+  ctx.logger.info('【请求验签参数】:', ctx.request.body);
   const { accesskey, data, timestamp, sign } = ctx.request.body;
 
   // 1.检查必要字段
