@@ -1,5 +1,4 @@
-import {decrypt} from '@mitod/js-utils/lib/secret/aes';
-import {checkSign,getOriginData} from '@mitod/sdk-sign';
+import {getApiAuth} from '@mitod/sdk-sign';
 /**
  * timegap 客户端访问时间 默认600秒
  */
@@ -8,10 +7,10 @@ export default options => async (ctx: any, next: any) => {
   const { errorCode } = ctx.app.config;
 
   ctx.logger.info('【请求验签参数】:', ctx.request.body);
-  const { accesskey, data, timestamp, sign } = ctx.request.body;
+  const { appid, timestamp, sign, signType, ...rest } = ctx.request.body;
 
   // 1.检查必要字段
-  if (!accesskey || !data || !timestamp || !sign) {
+  if (!appid || !timestamp || !sign) {
     ctx.body = { code: 1001, message: errorCode[1001] };
     return;
   }
@@ -26,25 +25,22 @@ export default options => async (ctx: any, next: any) => {
   // 3.获取secretkey
   let secretkey;
   if(handler){
-    secretkey = handler(ctx,accesskey)
+    secretkey = handler(ctx, appid)
   } else {
     throw new Error('【egg-signature】没有配置回调函数handler');
   }
 
+  // 临时签名
+  const realData = {appid, timestamp, ...rest};
+  const _signData = getApiAuth(realData, secretkey, signType === 2 ? "AES" : "MD5");
   // 4. 验签
-  const ret = checkSign(sign, data, secretkey);
+  const ret = (_signData.sign == sign);
   if (!ret) {
     ctx.body = { code: 1005, message: errorCode[1005] };
     return;
   }
 
-  // 5. 解密数据并赋值给locals
-  const realData = decrypt(data, secretkey);
-
-  if (realData) {
-    ctx.locals.signData = getOriginData(realData);
-  } else {
-    throw new Error('源数据解析异常');
-  }
+  // 5. 赋值给locals
+  ctx.locals.signData = realData;
   await next();
 };
