@@ -25,7 +25,11 @@ export default options => async (ctx: any, next: any) => {
   // 3.获取secretkey
   let secretkey;
   if(handler){
-    secretkey = handler(ctx, appid)
+    if(typeof handler ==='function'){
+      secretkey = await handler(ctx, appid)
+    } else {
+      secretkey = handler;
+    }
   } else {
     throw new Error('【egg-signature】没有配置回调函数handler');
   }
