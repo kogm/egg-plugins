@@ -40,7 +40,5 @@ export default options => async (ctx: any, next: any) => {
     return;
   }
 
-  // 5. 赋值给locals
-  ctx.locals.signData = realData;
   await next();
 };
