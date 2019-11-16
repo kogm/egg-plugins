@@ -21,9 +21,11 @@ export default () => {
       if(!cacheMock){
         cacheMock = Object.keys(mockData);
       }
-      cacheMock.forEach(async mock => {
-        const { method, re, keys, handler } = mockData[mock];
 
+      for(let i=0;i< cacheMock.length;i++){
+        const mock = cacheMock[i];
+        const { method, re, keys, handler } = mockData[mock];
+        
         if (method === ctx.request.method) {
           const match = re.exec(ctx.request.url);
           if (match) {
@@ -46,6 +48,6 @@ export default () => {
             await next();
           }
         }
-      });
+      }
   };
 };

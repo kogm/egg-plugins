@@ -41,6 +41,7 @@ data:{
   mch_id:	2222222 // 必填 商户号
   device_info:	333333 // 自定义参数 可以是终端设备号、门店号、收银设备号
   extend: // 扩展字段  json字符串，若没有则不需要加入字符串中
+  timestamp: xxx,
 }
 
 // 第二步 
@@ -53,7 +54,7 @@ sign=MD5(stringA + secretkey).toUpperCase()
 // 加密AES （mode、ECB 、PKCS5Padding） 
 sign=AES(stringA, secretkey).toUpperCase() //注：secretkey为商户平台设置的密钥secretkey 
 
-// 或者调用sdk-sign
+// 或者调用sdk-sign(可以不需要timestamp)
 // getApiAuth(data,secretkey,type)
 // type 默认 MD5 可选 AES
 ```
