@@ -41,10 +41,12 @@ export default () => {
             ctx.request.query = params;
             if (typeof handler === 'function') {
               await handler(ctx, next);
+              break;
             } else {
               ctx.body = handler;
+              break;
             }
-          } else {
+          } else if(i === cacheMock.length-1){
             await next();
           }
         }
