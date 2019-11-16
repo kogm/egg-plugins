@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "@mitod/js-utils": "^0.0.10",
-    "@mitod/sdk-sign": "^0.0.4"
+    "@mitod/sdk-sign": "^0.0.5"
   },
   "devDependencies": {
     "@mitod/eslint-config": "^0.0.6",
