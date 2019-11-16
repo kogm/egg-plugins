@@ -15,3 +15,8 @@ export default {
   'POST /api/users/create': (ctx) => { ctx.body = 'ok';},
 };
 ```
+
+
+## BUG
+
+- [x] foreach 不支持Promise
