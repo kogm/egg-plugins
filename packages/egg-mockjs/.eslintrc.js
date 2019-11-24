@@ -1,14 +1,16 @@
-{
-  "root": true,
-  "env": {
-    "es6": true
+module.exports = {
+  root: true,
+  env: {
+    es6: true
   },
-  "parserOptions": {
-    "sourceType": "module"
+
+  parserOptions: {
+    sourceType: "module"
   },
-  "extends": [
+
+  extends: [
     "@mitod/eslint-config/globals",
     "@mitod/eslint-config/base",
     "@mitod/eslint-config/ts"
   ]
-}
+};
